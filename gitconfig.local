@@ -1,0 +1,5 @@
+[user]
+  name = Carlos Eduardo L. Lopes
+  email = carlos.el.lopes@gmail.com
+[credential]
+  helper = osxkeychain

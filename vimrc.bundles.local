@@ -1,0 +1,5 @@
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'stephenmckinney/vim-solarized-powerline'
+Bundle 'tpope/vim-commentary'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'airblade/vim-gitgutter'

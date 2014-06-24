@@ -4,6 +4,7 @@ set cursorline     " show cursor line
 set hlsearch       " highlight search matches
 set ignorecase     " searches are case insensitive...
 set smartcase      " ... unless they contain at least one capital letter
+set colorcolumn=81 " highlight column 81
 
 " Map <space> to :
 nnoremap <space> :

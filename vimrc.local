@@ -37,3 +37,6 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " define Ag command
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+
+" show more results with ctrlp
+let g:ctrlp_max_height = 20

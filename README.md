@@ -4,7 +4,8 @@ carloslopes dotfiles
 Requirements
 ------------
 
-Install [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
+* Install [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
+* [iTerm2](http://www.iterm2.com/#/section/home) 
 
 Install
 -------
@@ -18,3 +19,8 @@ Install:
 ```
 rcup -d dotfiles -x README.md -x LICENSE
 ```
+
+Configure iTerm2
+----------------
+
+Send this text at start: `tmux attach -t base || tmux new -s base`

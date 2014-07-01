@@ -1,5 +1,9 @@
-bind | split-window -h
-bind - split-window -v
+# open new windows on current pane path
+bind c new-window -c "#{pane_current_path}"
+
+# map keys to split window
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
 # resize panes using shift + Vim keys
 bind -r H resize-pane -L 5

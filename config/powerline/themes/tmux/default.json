@@ -1,0 +1,34 @@
+{
+  "default_module": "powerline.segments.common",
+  "segment_data": {
+    "uptime": {
+      "before": "⇑  "
+    },
+    "date": {
+      "before": "⌚ "
+    }
+  },
+  "segments": {
+    "right": [
+      {
+        "name": "battery",
+        "args": {
+          "gamify": true
+        }
+      },
+      {
+        "name": "date"
+      },
+      {
+        "name": "date",
+        "args": {
+          "format": "%H:%M",
+          "istime": true
+        }
+      },
+      {
+        "name": "user"
+      }
+    ]
+  }
+}

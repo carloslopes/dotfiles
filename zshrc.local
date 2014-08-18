@@ -48,8 +48,8 @@ source $ZSH/oh-my-zsh.sh
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Hub
-alias git='hub'
+# gh for a better github experience
+eval "$(gh alias -s)"
 
 # Postgresapp Binaries
 export PATH="$PATH:/Applications/Postgres93.app/Contents/MacOS/bin"

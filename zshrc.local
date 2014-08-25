@@ -53,3 +53,6 @@ eval "$(gh alias -s)"
 
 # Postgresapp Binaries
 export PATH="$PATH:/Applications/Postgres93.app/Contents/MacOS/bin"
+
+# Add memory to cd command
+setopt autopushd

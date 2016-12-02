@@ -52,7 +52,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 eval "$(gh alias -s)"
 
 # Postgresapp Binaries
-export PATH="$PATH:/Applications/Postgres93.app/Contents/MacOS/bin"
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 # Add memory to cd command
 setopt autopushd

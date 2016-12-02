@@ -16,3 +16,6 @@ source "/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline
 
 # Clipboard workaround
 set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# Move tmux copy buffer into system clipboard
+bind C-y run "tmux show-buffer | pbcopy"

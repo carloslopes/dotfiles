@@ -60,3 +60,6 @@ setopt autopushd
 
 # Perlbrew initializer
 source ~/perl5/perlbrew/etc/bashrc
+
+# load rbenv
+eval "$(rbenv init -)"

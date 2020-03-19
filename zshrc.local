@@ -44,22 +44,23 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(bundler)
 
+# Ignore permission issues related to completion directories
+ZSH_DISABLE_COMPFIX=true
+
 source $ZSH/oh-my-zsh.sh
 
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# gh for a better github experience
-eval "$(gh alias -s)"
-
-# Postgresapp Binaries
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
-
 # Add memory to cd command
 setopt autopushd
 
-# Perlbrew initializer
-source ~/perl5/perlbrew/etc/bashrc
-
 # load rbenv
 eval "$(rbenv init -)"
+
+# Link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# Language settings
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"

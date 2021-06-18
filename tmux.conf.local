@@ -13,7 +13,7 @@ bind -r L resize-pane -R 5
 
 # Powerline config
 run-shell "powerline-daemon -q"
-source "/usr/local/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf"
+source "/usr/local/lib/python3.8/site-packages/powerline/bindings/tmux/powerline.conf"
 
 # Clipboard workaround
 set-option -g default-command "reattach-to-user-namespace -l zsh"

@@ -1,5 +1,7 @@
+[core]
+  excludesfile = ~/.gitignore_global
 [user]
-  name = Carlos Eduardo L. Lopes
+  name = Carlos Lopes
   email = carlos.el.lopes@gmail.com
 [credential]
   helper = osxkeychain

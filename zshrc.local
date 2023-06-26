@@ -83,3 +83,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Setup GPG
 export GPG_TTY=$(tty)
+
+# Disable Spring on Rails projects
+export DISABLE_SPRING=true

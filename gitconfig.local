@@ -3,5 +3,9 @@
 [user]
   name = Carlos Lopes
   email = carlos.el.lopes@gmail.com
+  useConfigOnly = true
+  signingkey = 222F688D3F800077233755A490F4C6F0EC27442A
 [credential]
   helper = osxkeychain
+[commit]
+  gpgsign = true

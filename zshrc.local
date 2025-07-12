@@ -86,3 +86,6 @@ export GPG_TTY=$(tty)
 
 # Disable Spring on Rails projects
 export DISABLE_SPRING=true
+
+# fzf configuration
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

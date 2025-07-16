@@ -9,7 +9,6 @@ Requirements
 * [Powerline](https://powerline.readthedocs.org/en/latest/index.html)
 * Install [reattach-to-user-namespace](http://robots.thoughtbot.com/how-to-copy-and-paste-with-tmux-on-mac-os-x)
 * Install [the_silver_searcher](http://robots.thoughtbot.com/faster-grepping-in-vim)
-* Install [gh](http://owenou.com/gh/)
 
 Install
 -------

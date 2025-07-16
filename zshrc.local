@@ -49,17 +49,11 @@ ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-# recommended by brew doctor
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
 # Add memory to cd command
 setopt autopushd
 
 # load rbenv
 eval "$(rbenv init -)"
-
-# Link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # Language settings
 export LANG="en_US.UTF-8"
@@ -89,3 +83,10 @@ export DISABLE_SPRING=true
 
 # fzf configuration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setup Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH" # Temporarily keep Intel based Homebrew binaries as fallback
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Link Rubies to Homebrew's OpenSSL
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl)"

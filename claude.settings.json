@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rspec:*)",
+      "Bash(bundle exec rspec:*)"
+    ],
+    "deny": [],
+    "includeCoAuthoredBy": false
+  }
+}

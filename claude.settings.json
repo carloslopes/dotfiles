@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(rspec:*)",
-      "Bash(bundle exec rspec:*)"
+      "Bash(bundle exec rspec:*)",
+      "Bash(git checkout:*)",
+      "Bash(bundle exec rubocop:*)"
     ],
     "deny": [],
     "includeCoAuthoredBy": false

@@ -6,7 +6,7 @@
       "Bash(git checkout:*)",
       "Bash(bundle exec rubocop:*)"
     ],
-    "deny": [],
-    "includeCoAuthoredBy": false
-  }
+    "deny": []
+  },
+  "includeCoAuthoredBy": false
 }

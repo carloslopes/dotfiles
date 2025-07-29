@@ -87,3 +87,6 @@ export DISABLE_SPRING=true
 # Setup Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH" # Temporarily keep Intel based Homebrew binaries as fallback
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Setup pipx
+export PATH="$PATH:/Users/carloslopes/.local/bin"

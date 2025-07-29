@@ -4,7 +4,8 @@
       "Bash(rspec:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(git checkout:*)",
-      "Bash(bundle exec rubocop:*)"
+      "Bash(bundle exec rubocop:*)",
+      "Bash(gh pr:*)"
     ],
     "deny": []
   },

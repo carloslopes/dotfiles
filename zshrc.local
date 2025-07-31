@@ -85,7 +85,6 @@ export DISABLE_SPRING=true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setup Homebrew
-# export PATH="/usr/local/bin:/usr/local/sbin:$PATH" # Temporarily keep Intel based Homebrew binaries as fallback
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setup pipx

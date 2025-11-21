@@ -1,13 +1,18 @@
 {
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(rspec:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(git checkout:*)",
       "Bash(bundle exec rubocop:*)",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "Bash(rubocop:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   },
-  "includeCoAuthoredBy": false
+  "feedbackSurveyState": {
+    "lastShownTime": 1753968511680
+  }
 }

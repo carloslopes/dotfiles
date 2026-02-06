@@ -89,3 +89,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setup pipx
 export PATH="$PATH:/Users/carloslopes/.local/bin"
+
+# Langflow setup
+. "$HOME/.langflow/uv/env"

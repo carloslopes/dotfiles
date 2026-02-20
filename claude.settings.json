@@ -14,5 +14,9 @@
   },
   "feedbackSurveyState": {
     "lastShownTime": 1753968511680
-  }
+  },
+  "settingSources": [
+    "user",
+    "project"
+  ]
 }

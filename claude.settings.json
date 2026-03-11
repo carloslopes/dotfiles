@@ -18,5 +18,8 @@
   "settingSources": [
     "user",
     "project"
-  ]
+  ],
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
 }

@@ -1,33 +1,30 @@
 {
-  "default_module": "powerline.segments.common",
   "segment_data": {
-    "uptime": {
-      "before": "⇑  "
-    },
-    "date": {
+    "powerline.segments.common.time.date": {
       "before": "⌚ "
     }
   },
   "segments": {
     "right": [
       {
-        "name": "battery",
+        "function": "powerline.segments.common.bat.battery",
         "args": {
           "gamify": true
         }
       },
       {
-        "name": "date"
+        "function": "powerline.segments.common.time.date"
       },
       {
-        "name": "date",
+        "function": "powerline.segments.common.time.date",
+        "name": "time",
         "args": {
           "format": "%H:%M",
           "istime": true
         }
       },
       {
-        "name": "user"
+        "function": "powerline.segments.common.env.user"
       }
     ]
   }

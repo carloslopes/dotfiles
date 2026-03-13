@@ -1,8 +1,4 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
-  },
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
@@ -16,14 +12,19 @@
     ],
     "deny": []
   },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
   "feedbackSurveyState": {
     "lastShownTime": 1753968511680
   },
   "settingSources": [
     "user",
     "project"
-  ],
-  "enabledPlugins": {
-    "superpowers@claude-plugins-official": true
-  }
+  ]
 }

@@ -1,4 +1,7 @@
 {
+  "env": {
+    "ENABLE_LSP_TOOL": "1"
+  },
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
@@ -12,23 +15,31 @@
     ],
     "deny": []
   },
-  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
-    "ruby-lsp@claude-plugins-official": true
+    "ruby-lsp@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": true
   },
-  "env": {
-    "ENABLE_LSP_TOOL": "1"
+  "extraKnownMarketplaces": {
+    "chrome-devtools-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ChromeDevTools/chrome-devtools-mcp"
+      }
+    }
   },
+  "effortLevel": "high",
+  "preferredNotifChannel": "terminal_bell",
   "feedbackSurveyState": {
     "lastShownTime": 1753968511680
   },
   "settingSources": [
     "user",
     "project"
-  ]
+  ],
+  "model": "opus[1m]"
 }

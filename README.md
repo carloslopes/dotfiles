@@ -18,6 +18,20 @@ Clone onto your laptop:
 git clone git://github.com/carloslopes/dotfiles.git
 ```
 
+Secrets
+-------
+
+This repository is public, so no secret belongs in a tracked file. Machine-local
+secrets live in `.secrets`, which is gitignored and sourced at the end of
+`zshrc.local`:
+
+```
+cp .secrets.example .secrets
+chmod 600 .secrets
+```
+
+Then fill in the real values.
+
 Configure iTerm2
 ----------------
 

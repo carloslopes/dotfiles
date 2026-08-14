@@ -1,6 +1,13 @@
 {
   "env": {
-    "ENABLE_LSP_TOOL": "1"
+    "ENABLE_LSP_TOOL": "1",
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+    "OTEL_LOG_TOOL_DETAILS": "1",
+    "OTEL_METRICS_EXPORTER": "otlp",
+    "OTEL_LOGS_EXPORTER": "otlp",
+    "OTEL_EXPORTER_OTLP_ENDPOINT": "http://34.68.28.254:4318",
+    "OTEL_EXPORTER_OTLP_PROTOCOL": "http/protobuf",
+    "OTEL_EXPORTER_OTLP_HEADERS": "Authorization=Bearer ${CLAUDE_OTEL_TOKEN}"
   },
   "includeCoAuthoredBy": false,
   "permissions": {
@@ -34,12 +41,12 @@
   },
   "effortLevel": "high",
   "preferredNotifChannel": "terminal_bell",
+  "agentPushNotifEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1753968511680
   },
   "settingSources": [
     "user",
     "project"
-  ],
-  "model": "opus[1m]"
+  ]
 }

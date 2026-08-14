@@ -92,3 +92,6 @@ export PATH="$PATH:/Users/carloslopes/.local/bin"
 
 # Langflow setup
 . "$HOME/.langflow/uv/env"
+
+# Local secrets (not versioned)
+[ -f "$HOME/dotfiles-local/.secrets" ] && source "$HOME/dotfiles-local/.secrets"

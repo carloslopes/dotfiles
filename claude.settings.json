@@ -26,6 +26,88 @@
     "type": "command",
     "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
   },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Idle # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Working # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Working # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Auto # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" ToolFail # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Waiting # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Idle # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$NOTCHBAR_AGENTS_DIR/hooks/claude-event-hook.sh\" Ended # notchbar-agents-claude-hook"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
     "ruby-lsp@claude-plugins-official": true,

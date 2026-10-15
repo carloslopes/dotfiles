@@ -22,10 +22,6 @@
     ],
     "deny": []
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
-  },
   "hooks": {
     "SessionStart": [
       {
@@ -107,6 +103,10 @@
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/carloslopes/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
     "superpowers@claude-plugins-official": true,
